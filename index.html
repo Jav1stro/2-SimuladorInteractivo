@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://kit.fontawesome.com/3bb4201824.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+   
+    <title>SimuladorInteractivo</title>
+    
+</head>
+<body>
+ 
+  <div class="bg"></div>
+  
+  <div class="container">
+
+    
+
+    <header class="hdr">
+    <h1><i class="fa fa-trophy"></i>Armá tu equipo ideal
+      <i class="fa fa-trophy"></i>
+    </h1>
+    <p id="cantidad-prod"></p>
+    <hr>
+    </header>
+   <i class="fa fa-trophy" aria-hidden="true"style="position:sticky;top:5%; color:rgb(161, 255, 148);"></i>
+  
+  <!-- <div class="topnav">
+
+    <a href="#" style="float:right"><input class="button-3"type="button" onclick="buscarJugador()" value="Buscar"></a>
+    <a href="#" style="float:right"><input type="text" id="jugador-buscado"></a>
+    
+  </div>  -->
+  <!-- FINAL NAV -->
+  
+  <div class="row">
+    <div class="col-sm-8 ">
+      <div class="row">
+        <div class="col-sm-4">
+          
+          
+           
+          <div class="btn-group">
+            <button type="button" class="btn btn-success"onclick="generarCardsDeJugadores(jugadores,mostrarCardsEnHTML)">
+              Jugadores</button>
+            <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden"></span>
+            </button>
+            <ul class="dropdown-menu" style="background:rgba(7, 148, 77);">
+              <li><button type="button" class="btn text-warning dropdown-item" id="cardsArqueros" onclick="generarCardsDeJugadores(arqueros,mostrarCardsEnHTML)" style="text-shadow: 1px 1px 2px black;">
+                Arqueros</button></li>
+              <li><button type="button" class="btn text-success dropdown-item"  id="cardsDefensores" onclick="generarCardsDeJugadores(defensores,mostrarCardsEnHTML)" style="text-shadow: 1px 1px 2px black;">
+                Defensores</button></li>
+                <li><button type="button" class="btn text-danger dropdown-item" onclick="generarCardsDeJugadores(mediocampistas,mostrarCardsEnHTML)" style="text-shadow: 1px 1px 2px black;">
+                  Mediocampistas</button></li>
+              <li><button type="button" class="btn text-primary dropdown-item" onclick="generarCardsDeJugadores(delanteros,mostrarCardsEnHTML)" style="text-shadow: 1px 1px 2px black;">
+                Delanteros</button></li>
+            </ul>
+          </div>
+      
+      </div>
+      <div class="col-sm-8 search">
+        <div class="search-box">
+          <button class="btn-search" ><i class="fas fa-search" id="boton-buscar" onclick="buscarJugador()"></i></button>
+          <input type="text" class="input-search" placeholder="Buscar Jugador" id="texto-buscado">
+        </div>
+      </div>
+      </div>
+      <div class="jugadores" id="jugadores">
+        <!-- acá se ven las cards -->
+      </div>
+      </div>
+<!-- DERECHA -->
+    <div class="col-sm-4 ">
+      <!-- primera parte -->
+      <div class="cont" >
+          <div class="row">
+            <div class="col-sm-7"style="margin-top:10px;">
+          <input type="text" id="nombreUsuario" placeholder="nombreDeEquipo" class="form-control"style="margin-left:10px; background-color: rgba(7, 148, 77, 0.308);">
+        </div>
+        <div class="col-sm-5"style="margin-top:10px;">
+          <button type="submit" onclick="mostrarDetallesUsuarioAlPrincipio(usuario1);"class="btn btn-success"><i class="fa fa-paper-plane"></i></button>
+        </div>
+        
+        
+        
+          <br>
+
+        
+        <!-- NOMBRE EQUIPO -->
+        <h3 id="nombre"class="hdr3"></h3>
+        <hr>
+        <p id="dineroUsuario" class="dinero"><span class="icon-cash"></span> </p>
+        <hr>
+        <div  id="aa"class="b" style="width:200px; height:200px;margin:auto;margin-top:30px;"></div>
+      </div>
+      <!-- segunda parte -->
+      <div class="cont">
+        <h3 class="hdr2">Jugadores en tu equipo</h3>
+        <div class="row">
+          <div id="cantJugadores" class="col-sm-6 info">Cantidad de jugadores: 0</div>
+          <div id="precioCarrito" class="col-sm-6 info">Precio total del equipo: 0</div>
+        </div>
+        <div id="jugadoresEquipo">Jugadores:</div>
+        
+      </div>
+      <!-- tercer parte -->
+      <div class="cont" style="position:sticky;">
+        <h3 class="hdr2">Detalles</h3>
+        <!-- QUESTIONS -->
+        <section class="questions">
+          <!-- questions -->
+          <!-- single question -->
+          <article class="question">
+            <!-- question title -->
+            <div class="question-title">
+              <h6>Arqueros</h6>
+              <button type="button" class="question-btn">
+                <span class="plus-icon">
+                  +
+                </span>
+                <span class="minus-icon">
+                  -
+                </span>
+              </button>
+            </div>
+            <!-- question text -->
+            <div class="question-text">
+              <p id="arqueros" style="color:green">
+                mostrar arqueros
+              </p>
+            </div>
+          </article>
+          <!-- end of single question -->
+            <!-- single question -->
+            <article class="question">
+              <!-- question title -->
+              <div class="question-title">
+                <h6>Defensores</h6>
+                <button type="button" class="question-btn">
+                  <span class="plus-icon">
+                    +
+                  </span>
+                  <span class="minus-icon">
+                    -
+                  </span>
+                </button>
+              </div>
+              <!-- question text -->
+              <div class="question-text">
+                <p id="defensores" style="color:green">
+                  mostrar defensores
+                </p>
+              </div>
+            </article>
+            <!-- end of single question -->
+            <!-- single question -->
+            <article class="question">
+              <!-- question title -->
+              <div class="question-title">
+                <h6>MEDIOCAMPISTAS</h6>
+                <button type="button" class="question-btn">
+                  <span class="plus-icon">
+                    +
+                  </span>
+                  <span class="minus-icon">
+                    -
+                  </span>
+                </button>
+              </div>
+              <!-- question text -->
+              <div class="question-text">
+                <p id="mediocampistas" style="color:green">
+                Mostrar mediocampistas
+                </p>
+              </div>
+            </article>
+            <!-- end of single question -->
+            <!-- single question -->
+            <article class="question">
+              <!-- question title -->
+              <div class="question-title">
+                <h6>Delanteros</h6>
+                <!-- button -->
+                <button type="button" class="question-btn">
+                  <span class="plus-icon">
+                    +
+                  </span>
+                  <span class="minus-icon">
+                    -
+                  </span>
+                </button>
+              </div>
+              <!-- question text -->
+              <div class="question-text">
+                <p id="delanteros" style="color:green">
+                  mostrar delanteros
+                </p>
+              </div>
+            </article>
+            <!-- end of single question -->
+        </section>
+      </div>
+    </div>
+
+    <!-- modal 1 -->
+    <div class="modal-container" id="noTeAlcanza">
+      <h2>¡No te alcanza!</h2>
+  
+      <button id="cerrarModal1" class=" btn btn-danger">cerrar</button>
+    </div>
+<!-- modal 2 -->
+ <div class="modal-container" id="yaEstaEnElEquipo">
+  <h2>¡El jugador ya está en el equipo!</h2>
+  <button id="cerrarModal2" class=" btn btn-danger">cerrar</button>
+</div>
+  </div>
+  
+  <div class="footer">
+    <h2><button onclick="verNombresDeJugadoresDelEquipoEnConsola()">VER JG DEL EQUIPO EN CONSOLA</button>
+    </h2>
+  </div>
+  
+</div>
+
+<!-- SCRIPTS -->
+<script src="detalles.js"></script>
+<script src="jugador.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>
