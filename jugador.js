@@ -78,8 +78,6 @@ class Usuario{
     } 
 }
 
-
-
 const usuario1 = new Usuario('PEDRO',39,1500);
 
 function mostrarDetallesUsuarioAlPrincipio(usuario){
@@ -132,7 +130,7 @@ function mostrarCardsEnHTML2(id,cards){
     const a =document.getElementById(id);
     a.innerHTML = cards;
 }
-function generarDetallesDeJugador(nombre,mostrarCardsEnHTML){
+function generarDetallesDeJugador(nombre){
     let cardsGeneradas= '';
     
     const jugador = jugadores.find((jg)=> jg.nombre == nombre);
@@ -160,7 +158,7 @@ function generarDetallesDeJugador(nombre,mostrarCardsEnHTML){
 
 
         mostrarCardsEnHTML2("aa",cardsGeneradas);
-}
+};
 
 
 // 
@@ -333,6 +331,7 @@ function actualizarHTML(){
 //Código para decir sólo un atributo de los objetos de un Arrays
 function verNombresDeJugadoresDelEquipoEnConsola(){
     const nombresDeJugadoresDelEquipo = jugadoresDelEquipo.map((jg)=>jg.nombre);
-    console.log("---Jugadores del equipo: ");
-    console.log(nombresDeJugadoresDelEquipo);
+    setTimeout(()=>{console.log("---Jugadores del equipo: ");
+    console.log(nombresDeJugadoresDelEquipo);},3000);
+    
 }

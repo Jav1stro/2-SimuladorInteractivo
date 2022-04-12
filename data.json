@@ -1,8 +1,13 @@
 {
     "jugadores":[
         {
-            "nombre": "tal"},{
-                "nombre" : "tal"
-            } 
+            "nombre": "jorge",
+            "precio" : 3000,
+            "posicion" : "defensor"
+            },{
+            "nombre": "pedro",
+            "precio" : 300,
+            "posicion" : "defensor"
+            }
     ]
 }
