@@ -31,22 +31,13 @@
     <hr>
     </header>
    <i class="fa fa-trophy" aria-hidden="true"style="position:sticky;top:5%; color:rgb(161, 255, 148);"></i>
-  
-  <!-- <div class="topnav">
+ 
 
-    <a href="#" style="float:right"><input class="button-3"type="button" onclick="buscarJugador()" value="Buscar"></a>
-    <a href="#" style="float:right"><input type="text" id="jugador-buscado"></a>
-    
-  </div>  -->
-  <!-- FINAL NAV -->
-  
+  <!-- Buscador y filtrador -->
   <div class="row">
     <div class="col-sm-8 ">
       <div class="row">
         <div class="col-sm-4">
-          
-          
-           
           <div class="btn-group">
             <button type="button" class="btn btn-success"onclick="generarCardsDeJugadores(jugadores,mostrarCardsEnHTML)">
               Jugadores</button>
@@ -66,6 +57,7 @@
           </div>
       
       </div>
+      <!-- BUSCADOR -->
       <div class="col-sm-8 search">
         <div class="search-box">
           <button class="btn-search" ><i class="fas fa-search" id="boton-buscar" onclick="buscarJugador()"></i></button>
@@ -77,6 +69,10 @@
         <!-- acá se ven las cards -->
       </div>
       </div>
+
+
+
+
 <!-- DERECHA -->
     <div class="col-sm-4 ">
       <!-- primera parte -->
@@ -99,7 +95,8 @@
         <hr>
         <p id="dineroUsuario" class="dinero"><span class="icon-cash"></span> </p>
         <hr>
-        <div  id="aa"class="b" style="width:200px; height:200px;margin:auto;margin-top:30px;"></div>
+        <!-- Detalles INFO -->
+        <div  id="detalleJugador"class="detalle1"></div>
       </div>
       <!-- segunda parte -->
       <div class="cont">
@@ -222,18 +219,15 @@
   <button id="cerrarModal2" class=" btn btn-danger">cerrar</button>
 </div>
   </div>
-  
-  <div class="footer">
-    <h2><button onclick="verNombresDeJugadoresDelEquipoEnConsola()">VER JG DEL EQUIPO EN CONSOLA</button>
-    </h2>
-  </div>
-  
 </div>
 
 <!-- SCRIPTS -->
-<script src="detalles.js"></script>
-<script src="jugador.js"></script>
+<script src="js/detalles.js"></script>
+<script src="js/jugador.js"></script>
+<!-- <script src="js/signUp.js"></script> -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 
 </html>
+
+

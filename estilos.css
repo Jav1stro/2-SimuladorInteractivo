@@ -200,22 +200,25 @@
   }
   
 /* detalles */
-.b{
-  /* border:2px solid yellow; */
-  background-color:rgba(0, 0, 0, 0.315);
-  border-radius: 10%;
-
+.detalles{
+  width:300px;
+  height:300px;
+  margin-left:-40px;
+  background:transparent;
 }
+.detalle1{
+  width:200px; height:300px;margin:auto;
+}
+
 .detalle-jugador{
-  width:100%;
+  width:95%;
   height:100%;
-  background-color:rgb(255, 238, 0,0.7);
-  border-radius: 10%;
-  /* box-shadow: 0 0 10px rgb(0, 255, 42); */
-  margin:auto;
-  border:2px solid black;
-
+  margin-top:-30px;
 }
+.cont-titulo{
+  border-bottom:2px solid rgba(255, 255, 0, 0.445);
+  text-align: center;
+  }
 
 .detalle-jugador:hover {
   background-color: rgba(0, 0, 0, 0.493);
@@ -225,36 +228,24 @@
 }
 .detalle-content{
 border:none;
+font-size:14px;
+text-align:center;
 }
-  
-  /* MODALS  */
-  .modal-container{
-    box-sizing: border-box;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-position:fixed;
-top:35%;
-left:35%;
-height:200px;
-width:300px;
-padding:30px;
-background:rgba(0, 0, 0, 0.521);
-color:white;
-border-radius:10%;
-pointer-events:none;
-opacity:0;
-z-index: -1;
-border: solid 3px rgb(161, 255, 148);
+.imgsDetalle{
+  width:120px;
+  height:120px;
+  border-radius: 20%;
 }
-.modal-container.show{
-  opacity:1;
-  pointer-events:auto;
-  z-index:1;
+
+
+/* DETALLES JUGADOR 2 */
+
+
+.nav-item{
+  position:right;
+  margin:10px;
 }
-#cerrarModal{
-  padding:5px;
-}
+
 
 
 /* QUESTIONS */
@@ -391,3 +382,34 @@ border: solid 3px rgb(161, 255, 148);
     border-bottom:1px solid rgb(255, 238, 0,1);
     transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
   }
+
+
+/* MODALS  */
+.modal-container{
+box-sizing: border-box;
+display:flex;
+align-items:center;
+justify-content:center;
+  position:fixed;
+  top:35%;
+  left:35%;
+  height:200px;
+  width:300px;
+  padding:30px;
+  background:rgba(0, 0, 0, 0.521);
+  color:white;
+  border-radius:10%;
+  pointer-events:none;
+  opacity:0;
+  z-index: -1;
+  border: solid 3px rgb(161, 255, 148);
+  }
+  .modal-container.show{
+    opacity:1;
+    pointer-events:auto;
+    z-index:1;
+  }
+  #cerrarModal{
+    padding:5px;
+  }
+  

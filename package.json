@@ -1,0 +1,24 @@
+{
+  "name": "2-simuladorinteractivo",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jav1stro/2-SimuladorInteractivo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jav1stro/2-SimuladorInteractivo/issues"
+  },
+  "homepage": "https://github.com/Jav1stro/2-SimuladorInteractivo#readme",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.17.9"
+  }
+}

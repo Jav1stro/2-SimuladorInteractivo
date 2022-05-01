@@ -1,0 +1,19 @@
+ERROR DE FETCH:
+Cuando cargo los jugadores con el archivo data.json, no sé como convertirlos en la clase Jugador : 
+// let jugadores = [];
+//     fetch("/data.json")
+//     .then((response)=>response.json())
+//     .then((data)=> jugadores = data.jugadores);
+
+//     jugadores.forEach(jugador =>{
+//     let jugador1 = new Jugador(jugador.nombre,jugador.precio,jugador.posicion,jugador.imagen);
+//     })   ESTO ES LO QUE PENSÉ, PERO NO FUNCIONA
+
+
+ERROR LOCALSTORAGE DEL LOGIN:
+Cree dos páginas, index.html(que es para crear un usuario) y login(que es para logearte coon un usuario creado). Ambos en el archivo "signUp.js". Se guarda todo en el localStorage. El problema es que en el archivo donde está toda la lógica (jugadores.js), quiero saber cual de todos los usuarios creados es el loggeado. Intento exportar el nombre del usuario con un export en signUp.js, para despues importarlo en el archivo jugadores.js pero me dice que la palabra export es "uncaught" o alguna cosa así. Averigue cambiandole el tipo a modulo del script pero nada parece funcionar.
+
+
+ERROR LOCALSTORAGE:
+al apretar f5 no aparecen en amarillo los jugadores elegidos, no sé dónde está fallando la lógica ahí. también me da false cuando pongo en la consola:
+console.log(jugadoresDelEquipo.includes(jugadores[i]));, el i siendo un jugador que sí está en el array jugadoresDelEquipo, porque previamente lo llamo en consola y aparece ahí. 

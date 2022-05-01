@@ -1,13 +1,149 @@
 {
     "jugadores":[
-        {
-            "nombre": "jorge",
-            "precio" : 3000,
-            "posicion" : "defensor"
-            },{
-            "nombre": "pedro",
+            {
+            "nombre": "Buffon",
             "precio" : 300,
-            "posicion" : "defensor"
+            "posicion" : "arquero",
+            "imagen": "imgs/jugadores/buffon.jpg"
+            },
+            {
+            "nombre": "Casillas",
+            "precio" : 250,
+            "posicion" : "arquero",
+            "imagen": "imgs/jugadores/casillas.jpg"
+            },
+            {
+                "nombre": "Martinez",
+                "precio" : 270,
+                "posicion" : "arquero",
+                "imagen": "imgs/jugadores/martinez.jpg"
+            },
+            {
+                "nombre": "Gatti",
+                "precio" : 200,
+                "posicion" : "arquero",
+                "imagen": "imgs/jugadores/gatti.jpg"
+            },
+            {
+                "nombre": "Abbondanzieri",
+                "precio" : 230,
+                "posicion" : "arquero",
+                "imagen": "imgs/jugadores/abbondanzieri.jpg"
+            },
+            {
+                "nombre": "Romero",
+                "precio" : 100,
+                "posicion" : "arquero",
+                "imagen": "imgs/jugadores/romero.jpg"
+            },
+            {
+                "nombre": "Maldini",
+                "precio" : 220,
+                "posicion" : "defensor",
+                "imagen": "imgs/jugadores/maldini.jpg"
+            },
+            {
+                "nombre": "Sergio Ramos",
+                "precio" : 290,
+                "posicion" : "defensor",
+                "imagen": "imgs/jugadores/ramos.jpg"
+            },
+            {
+                "nombre": "Otamendi",
+                "precio" : 180,
+                "posicion" : "defensor",
+                "imagen": "imgs/jugadores/otamendi.jpg"
+            },
+            {
+                "nombre": "Zanetti",
+                "precio" : 210,
+                "posicion" : "defensor",
+                "imagen": "imgs/jugadores/zanetti.jpg"
+            },
+            {
+                "nombre": "Roberto Carlos",
+                "precio" : 320,
+                "posicion" : "defensor",
+                "imagen": "imgs/jugadores/robertocarlos.jpg"
+            },
+            {
+                "nombre": "Cannavaro",
+                "precio" : 330,
+                "posicion" : "defensor",
+                "imagen": "imgs/jugadores/cannavaro.jpg"
+            },
+            {
+                "nombre": "Riquelme",
+                "precio" : 310,
+                "posicion" : "mediocampista",
+                "imagen": "imgs/jugadores/riquelme.jpg"
+            },
+            {
+                "nombre": "Iniesta",
+                "precio" : 270,
+                "posicion" : "mediocampista",
+                "imagen": "imgs/jugadores/iniesta.jpg"
+            },
+            {
+                "nombre": "Maradona",
+                "precio" : 1000,
+                "posicion" : "mediocampista",
+                "imagen": "imgs/jugadores/maradona.jpg"
+            },
+            {
+                "nombre": "Zidane",
+                "precio" : 300,
+                "posicion" : "mediocampista",
+                "imagen": "imgs/jugadores/zidane.jpg"
+            },
+            {
+                "nombre": "Enzo Perez",
+                "precio" : 150,
+                "posicion" : "mediocampista",
+                "imagen": "imgs/jugadores/perez.jpg"
+            },
+            {
+                "nombre": "Gago",
+                "precio" : 190,
+                "posicion" : "mediocampista",
+                "imagen": "imgs/jugadores/gago.jpg"
+            },
+            {
+                "nombre": "Batistuta",
+                "precio" : 240,
+                "posicion" : "delantero",
+                "imagen": "imgs/jugadores/batistuta.jpg"
+            },
+            {
+                "nombre": "C.Ronaldo",
+                "precio" : 330,
+                "posicion" : "delantero",
+                "imagen": "imgs/jugadores/ronaldo.jpg"
+            },
+            {
+                "nombre": "Ronaldo",
+                "precio" : 310,
+                "posicion" : "delantero",
+                "imagen": "imgs/jugadores/ronaldoN.jpg"
+            },
+            {
+                "nombre": "Messi",
+                "precio" : 900,
+                "posicion" : "delantero",
+                "imagen": "imgs/jugadores/messi.jpg"
+            },
+            {
+                "nombre": "Palermo",
+                "precio" : 220,
+                "posicion" : "delantero",
+                "imagen": "imgs/jugadores/palermo.jpg"
+            },
+            {
+                "nombre": "Francescoli",
+                "precio" : 200,
+                "posicion" : "delantero",
+                "imagen": "imgs/jugadores/francescoli.jpg"
             }
+            
     ]
 }

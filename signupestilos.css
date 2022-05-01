@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+  padding: 0;
+    background-image: url(imgs/fondo.jpg);
+    background-size:cover;
+    opacity:0.9;
+
+  }
+  .container {
+      
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+  
+  .child {
+    width: fit-content;
+    height:fit-content;
+    padding:30px;
+    margin-top:15%;
+    text-align: center;
+    background: rgba(65, 163, 65, 0.623);
+    border-radius:10%;
+  }
